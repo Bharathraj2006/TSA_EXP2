@@ -8,8 +8,11 @@ To Implement Linear and Polynomial Trend Estiamtion Using Python.
 ### ALGORITHM:
 
 1.Import necessary libraries (NumPy, Matplotlib)
+
 2.Load the dataset
+
 3.Calculate the linear trend values using least square method
+
 4.Calculate the polynomial trend values using least square method
 
 
@@ -53,7 +56,7 @@ a_poly, b_poly, c_poly = solution
 poly_trend = [a_poly + b_poly * X[i] + c_poly * (X[i] ** 2) for i in range(n)]
 ```
 ## Plot
-
+```
 print(f"Linear Trend: y={a:.2f} + {b:.2f}x")
 print(f"\nPolynomial Trend: y={a_poly:.2f} + {b_poly:.2f}x + {c_poly:.2f}x²")
 resampled_data['Linear Trend'] = linear_trend
@@ -63,6 +66,7 @@ resampled_data['Close/Last'].plot(kind='line',color='blue',marker='o') #alpha=0.
 resampled_data['Linear Trend'].plot(kind='line',color='black',linestyle='--')
 resampled_data['Close/Last'].plot(kind='line',color='blue',marker='o')
 resampled_data['Polynomial Trend'].plot(kind='line',color='black',marker='o')
+```
 
 # OUTPUT
 ## LINEAR TREND ESTIMATION
